@@ -5,8 +5,9 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Set up JDK 17
         uses: actions/setup-java@v3
@@ -14,12 +15,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       
+      - name: Grant gradlew permissions
+        run: chmod +x gradlew
+        
       - name: Build APK
-        run: |
-          chmod +x gradlew
-          ./gradlew assembleDebug
-          
-      - uses: actions/upload-artifact@v3
+        run: ./gradlew assembleDebug
+        
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
         with:
-          name: sweater-apk
-          path: app/build/outputs/apk/debug/*.apk
+          name: sweater-calculator
+          path: |
+            app/build/outputs/apk/debug/app-debug.apk
+            app/build/outputs/apk/debug/output-metadata.json
+          retention-days: 7
