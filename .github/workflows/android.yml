@@ -1,0 +1,23 @@
+name: Android CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build APK
+      uses: actions/github-script@v5
+      with:
+        script: |
+          const fs = require('fs');
+          fs.writeFileSync('gradle.properties', 'org.gradle.jvmargs=-Xmx2048m');
+    - name: Generate APK
+      run: ./gradlew assembleDebug
+    - name: Upload APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: sweater-calculator
+        path: app/build/outputs/apk/debug/app-debug.apk
