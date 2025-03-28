@@ -1,8 +1,14 @@
-# সোয়েটার ক্যালকুলেটর (Android App)
-   ## ফিচার
-   - বডি ও স্লিভের দৈর্ঘ্য থেকে সুতার পরিমাণ গণনা
-   - বাংলা ভাষায় ইউজার ইন্টারফেস
+# Sweater Calculator (Native)
 
-   ## ইনস্টলেশন
-   ```bash
-   git clone https://github.com/Nazmul2Habib/SweaterCalculator-Native.git
+An Android app to calculate sweater measurements.
+
+## Features
+- Measurement calculation
+- Save results
+
+## Installation
+1. Clone the repository
+2. Open in Android Studio
+
+## License
+[MIT](LICENSE)
