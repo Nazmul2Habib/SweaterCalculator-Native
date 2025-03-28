@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sweater Calculator</string>
+    <string name="body_length_label">বডির দৈর্ঘ্য (ইঞ্চি):</string>
+    <string name="sleeve_length_label">স্লিভের দৈর্ঘ্য (ইঞ্চি):</string>
+    <string name="calculate_button">গণনা করুন</string>
+    <string name="body_length_hint">ইঞ্চি লিখুন...</string>
+    <string name="sleeve_length_hint">ইঞ্চি লিখুন...</string>
+</resources>
