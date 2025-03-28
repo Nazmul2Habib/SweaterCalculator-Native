@@ -1,14 +1,12 @@
-# Sweater Calculator (Native)
+# সুইটার ক্যালকুলেটর (Android অ্যাপ)
 
-An Android app to calculate sweater measurements.
+সুইটারের মাপ ক্যালকুলেট করার জন্য এই অ্যাপটি তৈরি করা হয়েছে।
 
-## Features
-- Measurement calculation
-- Save results
+## ফিচারসমূহ
+- ব্যবহারকারীর ইনপুট অনুযায়ী মাপ গণনা
+- রেজাল্ট সেভ করার সুবিধা
 
-## Installation
-1. Clone the repository
-2. Open in Android Studio
-
-## License
-[MIT](LICENSE)
+## ইন্সটলেশন
+1. রিপোজিটরি ক্লোন করুন:
+   ```bash
+   git clone https://github.com/Nazmul2Habib/SweaterCalculator-Native.git
