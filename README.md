@@ -1,8 +1,8 @@
-# Sweater Calculator (Android Native)
-এটি একটি সুইটারের জন্য প্রয়োজনীয় সুতা ক্যালকুলেটর অ্যাপ।
+# সোয়েটার ক্যালকুলেটর (Android App)
+   ## ফিচার
+   - বডি ও স্লিভের দৈর্ঘ্য থেকে সুতার পরিমাণ গণনা
+   - বাংলা ভাষায় ইউজার ইন্টারফেস
 
-## ইনস্টলেশন
-1. রিপোজিটরি ক্লোন করুন: `git clone https://github.com/Nazmul2Habib/SweaterCalculator-Native.git`
-2. Android Studio তে খুলুন
-3. `Build` → `Make Project` ক্লিক করুন
-4. এমুলেটর বা ডিভাইসে রান করুন!
+   ## ইনস্টলেশন
+   ```bash
+   git clone https://github.com/Nazmul2Habib/SweaterCalculator-Native.git
