@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- বডির দৈর্ঘ্য -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_length_label"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etBodyLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/body_length_hint"/>
+
+        <!-- স্লিভের দৈর্ঘ্য -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleeve_length_label"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etSleeveLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/sleeve_length_hint"/>
+
+        <!-- গণনা বাটন -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_button"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"/>
+
+        <!-- রেজাল্ট -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
